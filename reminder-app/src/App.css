@@ -1,0 +1,240 @@
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  background-color: darkgrey;
+  margin: 0;
+  background-image: url(../src/components/galaxy.jpg);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.reminderForm {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  margin: 10px;
+}
+
+.reminder {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.reminders {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-width: 300px;
+
+}
+
+@media screen and (max-width:768px) {
+  .reminders {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 300px;
+  }
+}
+
+.reminder-container {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightblue;
+  min-width: 100px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.reminder-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid grey;
+  box-shadow: 2px 2px black;
+  background-color: cadetblue;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.navbar h1 {
+  cursor: pointer;
+}
+
+.createReminderBtn {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 20px;
+  padding: 5px;
+}
+
+.Regform {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.register-container {
+  /* position: absolute;
+  top: 100px;
+  left: 450px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 500px;
+  height: 550px;
+  border: 1px solid lightblue;
+  background-color: rgb(219, 217, 217);
+}
+
+@media screen and (max-width: 768px) {
+  .register-container {
+    width: 300px;
+  }
+}
+
+.regFormInput {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.Loginform {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#home {
+  display: flex;
+}
+
+.altAction {
+  cursor: pointer;
+  color: darkolivegreen;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.timeDisp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  /* position: absolute;
+  top: 100px;
+  left: 500px; */
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 300px;
+  height: 500px;
+  border: 1px solid lightblue;
+  background-color: aliceblue;
+}
+
+.signed-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 5px;
+  gap: 10px;
+}
+
+#remCount {
+  display: grid;
+  justify-content: center;
+  color: black;
+  max-width: 500px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+  background-color: aquamarine;
+}
+
+.errorMsg {
+  color: red;
+  background-color: cornsilk;
+}
+
+#rem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
